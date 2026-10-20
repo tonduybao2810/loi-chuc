@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#fff4f6">
+    <meta name="description" content="Một lời chúc ngẫu nhiên, tự thay đổi theo ngày lễ và những dịp đặc biệt.">
+    <link id="siteFavicon" rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2218%22 fill=%22%23fff0f4%22/%3E%3Ctext x=%2232%22 y=%2245%22 font-size=%2240%22 text-anchor=%22middle%22%3E%E2%9C%BF%3C/text%3E%3C/svg%3E">
+    <title>Một Chút Dịu Dàng 🌷</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="season-mark" aria-hidden="true">✿</div>
+        <div class="today-pill"><i></i><span id="todayLabel"></span></div>
+    </header>
+    <main class="shell">
+        <section class="intro">
+            <p class="eyebrow" id="introEyebrow">✦ MỘT LỜI CHÚC NHỎ ✦</p>
+            <h1 id="introTitle">Một lời chúc nhỏ,<br><em>một ngày thật đẹp.</em></h1>
+            <p class="intro-copy" id="introCopy">Mong bạn bắt gặp một điều dễ thương hôm nay.</p>
+        </section>
+        <section class="card-stage">
+            <div id="petalField" aria-hidden="true"></div>
+            <article class="greeting-card theme-everyday" id="greetingCard">
+                <div class="card-grain"></div>
+                <div class="card-topline"><span id="cardCategory">A LITTLE NOTE FOR YOU</span><span
+                        class="tiny-star">✧</span></div>
+                <div class="flower-art" aria-hidden="true"><svg viewBox="0 0 320 280">
+                        <defs>
+                            <linearGradient id="petal" x1="0" y1="0" x2="1" y2="1">
+                                <stop stop-color="#ffe7ec" />
+                                <stop offset="1" stop-color="#ce5579" />
+                            </linearGradient>
+                            <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+                                <stop stop-color="#b6cc9e" />
+                                <stop offset="1" stop-color="#477153" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M158 270C157 213 176 164 159 111" stroke="#527a59" stroke-width="4" fill="none"
+                            stroke-linecap="round" />
+                        <path d="M160 210C121 185 94 201 87 229C122 232 146 222 160 210Z" fill="url(#leaf)" />
+                        <path d="M165 174C194 139 225 145 241 166C210 188 184 184 165 174Z" fill="url(#leaf)" />
+                        <path d="M160 240C190 216 214 220 224 240C198 252 177 251 160 240Z" fill="url(#leaf)" />
+                        <g transform="translate(158 80)">
+                            <ellipse cy="-31" rx="20" ry="37" fill="url(#petal)" />
+                            <ellipse cy="-31" rx="20" ry="37" fill="url(#petal)" transform="rotate(45)" />
+                            <ellipse cy="-31" rx="20" ry="37" fill="url(#petal)" transform="rotate(90)" />
+                            <ellipse cy="-31" rx="20" ry="37" fill="url(#petal)" transform="rotate(135)" />
+                            <ellipse cy="-22" rx="17" ry="31" fill="#e9819e" transform="rotate(22)" />
+                            <ellipse cy="-22" rx="17" ry="31" fill="#e9819e" transform="rotate(67)" />
+                            <ellipse cy="-22" rx="17" ry="31" fill="#e9819e" transform="rotate(112)" />
+                            <ellipse cy="-22" rx="17" ry="31" fill="#e9819e" transform="rotate(157)" />
+                            <circle r="17" fill="#a94465" />
+                            <path d="M-9 -2C-7 -15 10 -15 12 -2C10 9 -6 11 -9 -2Z" fill="#f7bd76" />
+                        </g>
+                        <g transform="translate(86 146) scale(.5)">
+                            <ellipse cy="-31" rx="20" ry="37" fill="#f6bdca" />
+                            <ellipse cy="-31" rx="20" ry="37" fill="#df7892" transform="rotate(45)" />
+                            <ellipse cy="-31" rx="20" ry="37" fill="#f6bdca" transform="rotate(90)" />
+                            <ellipse cy="-31" rx="20" ry="37" fill="#df7892" transform="rotate(135)" />
+                            <circle r="15" fill="#c67a46" />
+                        </g>
+                        <g transform="translate(232 119) scale(.4)">
+                            <ellipse cy="-31" rx="20" ry="37" fill="#fff0c6" />
+                            <ellipse cy="-31" rx="20" ry="37" fill="#f4c56f" transform="rotate(45)" />
+                            <ellipse cy="-31" rx="20" ry="37" fill="#fff0c6" transform="rotate(90)" />
+                            <ellipse cy="-31" rx="20" ry="37" fill="#f4c56f" transform="rotate(135)" />
+                            <circle r="15" fill="#a96d39" />
+                        </g>
+                        <g fill="#fff" opacity=".9">
+                            <circle cx="52" cy="78" r="3" />
+                            <circle cx="258" cy="53" r="4" />
+                            <circle cx="270" cy="198" r="2.5" />
+                            <path d="M48 168l3 7 7 3-7 3-3 7-3-7-7-3 7-3Z" />
+                        </g>
+                    </svg></div>
+                <div class="card-content">
+                    <p class="card-date" id="cardDate"></p>
+                    <p class="card-pretitle" id="cardPretitle"></p>
+                    <h2 id="cardTitle"></h2>
+                    <div class="ornament"><span></span>❀<span></span></div>
+                    <p class="greeting-message" id="greetingMessage"></p>
+                    <p class="recipient" id="recipientLine">Thân gửi <span>bạn</span></p>
+                </div>
+                <div class="card-bottom"><span>MỘT CHÚT YÊU THƯƠNG ♡</span><span id="cardYear"></span></div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer"><span class="footer-mark">✿</span>
+        <p>Mong ngày nào của bạn cũng có điều đáng mỉm cười.</p>
+    </footer>
+    <script src="holidays.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

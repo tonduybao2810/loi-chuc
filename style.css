@@ -59,3 +59,15 @@ body{height:100svh;min-height:0;display:flex;flex-direction:column}
 @media(max-height:720px) and (max-width:700px){.topbar{height:43px;flex-basis:43px}.intro{padding:5px 0 5px}.intro h1{font-size:clamp(27px,6.8vw,34px)}.intro-copy{font-size:12px}.card-content{padding-top:20px}.card-content h2{font-size:clamp(31px,8vw,41px)}.ornament{margin:10px 0 8px}.greeting-message{font-size:13px;line-height:1.48}.recipient{margin-top:10px}}
 @media(max-width:360px){.season-mark{font-size:18px}.today-pill{font-size:9px}.card-content{width:90%}.flower-art{opacity:.5}.greeting-message{font-size:13px}}
 @media(prefers-reduced-motion:reduce){.firework,.falling-petal{animation-duration:18s!important;transition:none!important}}
+
+/* Seasonal illustration: keeps the original layout, swaps only the artwork. */
+.season-visual{display:flex;align-items:center;justify-content:center}
+.season-visual img{display:block;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 9px 9px #713e431a)}
+.season-emoji-art{width:100%;height:100%;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;font-size:clamp(54px,7vw,92px);line-height:1;filter:drop-shadow(0 9px 9px #713e431a)}
+.season-emoji-art .big{font-size:1.15em}
+.season-emoji-art .small{font-size:.72em}
+.season-emoji-art.christmas-fallback{display:none}
+@media(max-width:700px){
+  .season-visual img{max-height:100%;object-fit:contain}
+  .season-emoji-art{font-size:clamp(46px,12vw,72px)}
+}
